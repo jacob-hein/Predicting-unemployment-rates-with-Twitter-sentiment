@@ -14,7 +14,7 @@ State-level Twitter data from various major and local news companies were extrac
 As an example, consider the news tweets in three different weeks of 2020 for New York containing the twitter handle of Governor Andrew Cuomo ([@NYGovCuomo](https://twitter.com/NYGovCuomo)):
 ![Wordclouds](wordclouds.PNG)
 
-The TextBlot sentiment analysis lexicon was used to compute sentiment scores representing the general sentiment towards the governor in each state. 
+The TextBlob sentiment analysis lexicon was used to compute sentiment scores representing the general sentiment towards the governor in each state. 
 
 ### All time-series data
 The weekly US unemployment rates and covid-19 data was scraped from [Worldometer](https://www.worldometers.info/coronavirus/usa/) and the [United States Department of Labor](https://oui.doleta.gov/unemploy/claims.asp). The heatmap below represents the data from the first week of **April, 2020**:
