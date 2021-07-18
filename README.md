@@ -6,7 +6,7 @@ With the goal of predicting weekly, state-level unemployment rates in the US, th
 
 <img src="https://render.githubusercontent.com/render/math?math=X_{t} =\bigg[y_{t-1}, S_{t-1}, C_{t-1}, D_{t-1}\bigg]">
 
-### Check out the .ipynb notebook file for a full walk-through!
+### Check out the [projectNotebook.ipynb](projectNotebook.ipynb) file for a full walk-through!
 
 ### Twitter data
 State-level Twitter data from various major and local news companies were extracted on a weekly basis. News tweets containing the handle of the governor in each state were stored. 
@@ -23,8 +23,11 @@ The weekly US unemployment rates and covid-19 data was scraped from [Worldometer
 Ultimately, the following four time-series were fed as input data to the LSTM network. The plots below show these time-series data from a few US states.   
 ![inputTimeseries](inputTimeseries.PNG)
 
-### LSTM predictions
+### LSTM out-of-sample predictions
+The LSTM network was trained on data of all but the two latest months. The latest data were treated as test data to provide out-of-sample predictions. 
+
 ![results](results.PNG)
+
 For each state, the LSTM network tries to predict the weekly unemployment rate in that state, <img src="https://render.githubusercontent.com/render/math?math=y_{t}">.
 
 The network shows good predictive ability in some states, however it make very poor predictions in states that kept unemployment rates relatively low despite high numbers of covid-19 cases, such as Texas and Florida. 
