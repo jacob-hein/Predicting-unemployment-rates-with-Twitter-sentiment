@@ -24,7 +24,15 @@ Ultimately, the following four time-series were fed as input data to the LSTM ne
 ![inputTimeseries](inputTimeseries.PNG)
 
 ### LSTM predictions
-For each state, the LSTM network tries to predict the weekly unemployment rate in that state, <img src="https://render.githubusercontent.com/render/math?math=y_{t}">, the network shows good predictive ability in some states, and completely overshot predictions in other states:
 ![results](results.PNG)
+For each state, the LSTM network tries to predict the weekly unemployment rate in that state, <img src="https://render.githubusercontent.com/render/math?math=y_{t}">.
+
+The network shows good predictive ability in some states, however it make very poor predictions in states that kept unemployment rates relatively low despite high numbers of covid-19 cases, such as Texas and Florida. 
+
 ![moreresults](moreResults.PNG)
+
+### Main take-aways
+The recurrent neural network of the LSTM is a powerful tool for predictive time-series modeling.
+
+Lagged variables of weekly unemployment rates, twitter sentiment and covid-19 cases can be used to predict one-week-ahead unemployment rates in US states, however it may prove difficult to explain the variability in predictive of some states, due to the more-or-less black box nature of the LSTM in this setting. 
 
