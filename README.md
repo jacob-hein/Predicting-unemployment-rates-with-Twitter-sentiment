@@ -35,7 +35,6 @@ The network shows good predictive ability in some states, however it make very p
 ![moreresults](moreResults.PNG)
 
 ### Main take-aways
-The recurrent neural network of the LSTM is a powerful tool for predictive time-series modeling.
+The recurrent neural network of the LSTM is a powerful tool for predictive time-series modeling, but it has some serious short-comings. 
 
-Lagged variables of weekly unemployment rates, twitter sentiment and covid-19 cases can be used to predict one-week-ahead unemployment rates in US states, however it may prove difficult to explain the variability in predictive of some states, due to the more-or-less black box nature of the LSTM in this setting. 
-
+Lagged variables of weekly unemployment rates, twitter sentiment and covid-19 cases may be used to predict one-week-ahead unemployment rates in US states, however it may prove difficult to explain the variability in predictive performance within some states. I would NOT recommend the LSTM for this task, however feel free to replicate this project for fun or educational purposes.
